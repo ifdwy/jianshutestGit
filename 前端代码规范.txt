@@ -1,0 +1,65 @@
+1、页面布局代码标准
+
+2、建包问题
+
+		所有的css文件放在css文件夹中；image放在images文件夹中；js放在js文件夹中；若一个功能有多个界面，则给该功能建一个公用的包名之后里面按照不同模块，以模块_功能.html的形式存放html文件。
+
+3、HTML头部编写
+
+　　　　(1) 编码：所有编码均采用xhtml/html，标签必须闭合，编码统一为UTF-8，在多语言的网站建议添加<html lang="zh-CN">，说明内容是以中文显示和阅读为基础的
+
+　　　　(2) 语义化：正确使用标签，充分利用无兼容性问题的html自身标签
+
+　　　　(3) 文件头部head内容：
+
+　　　　　　? title: 需要添加标题
+
+　　　　　　? 编码: charset=UTF-8
+
+　　　　　　? meta: 可以添加description、keywords内容
+
+4、可以将CSS样式表分为三类：全局样式表、模块通用样式表和独立样式表
+
+		? 全局样式表常用命名：public.css
+
+　　　　? 模块通用样式表命名：模块名_basic.css
+
+　　　　? 独立样式表：模块名_页面名.css
+
+5、属性定义必须另起一行。如：
+		
+		.selector {
+			
+			margin: 0;
+			
+			padding: 0;
+		
+		}
+
+6、为每个块级元素或表格元素标签新起一行，并且对每个子元素进行缩进。
+
+7、CSS书写顺序，以提高代码的可读性。
+		
+		位置属性(position, top, right, z-index, display, float等)
+		
+		大小(width, height, padding, margin)
+		
+		文字系列(font, line-height, letter-spacing, color- text-align等)
+		
+		背景(background, border等)
+		
+		其他(animation, transition等)
+		
+8、选择器、属性和值都使用小写
+
+9、使用16进制表示颜色值，除非表示的是透明度
+
+10、css样式中也需要写明注释，实现可读性
+　　　　
+		? 每一个文档对应一个文档注释（主要注释内容包括：文档创建人、创建时间、主要内容描述等）
+
+　　　　? 属性注释说明：可以分CSS属性来进行命名（如：margin/padding值、CSS Hack、全局Hover等）
+
+　　　　? 功能模块注释说明：分模块来编写CSS样式（如：头部、导航、按钮、页脚等等）
+		
+		
